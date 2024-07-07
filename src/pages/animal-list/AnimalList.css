@@ -1,0 +1,40 @@
+.animal-list {
+    margin: 20px 0;
+}
+
+.animal-list h2 {
+    margin-bottom: 10px;
+}
+
+.animal-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.animal-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.animal-list button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.animal-list button:hover {
+    background-color: #ff1a1a;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}

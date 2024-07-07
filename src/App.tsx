@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import ErrorBoundary from './ErrorBoundary';
 import './App.css';
+import AddAnimalForm from './pages/add-animal/AddAnimalForm';
+import AnimalList from './pages/animal-list/AnimalList';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <div className="app">
+        <h1>Farm Management</h1>
+        <AddAnimalForm fetchAnimals={() => { }} />
+        <AnimalList />
+      </div>
+    </ErrorBoundary>
   );
-}
+};
 
 export default App;
